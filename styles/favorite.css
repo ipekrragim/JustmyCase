@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff6f61;
+}
+.favorites-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.favorite-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+.quantity-container{
+    margin: 0 50px;
+}
+.favorite-item:hover {
+    background-color: #fffbf5;
+}
+.product-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-container img {
+    width: 80px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.favorite-item-details h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.favorite-item-details p {
+    margin: 5px 0 0;
+    color: #333;
+}
+.remove-favorite-container button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-favorite-container button:hover {
+    background-color: #e0554c;
+}
+.favorites-container a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.favorites-container a:hover {
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .favorites-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center; 
+    }
+    .product-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-container img {
+        width: 100px;
+        height: auto;
+    }
+
+    .favorite-item-details h4 {
+        font-size: 18px;
+    }
+
+    .remove-favorite-container {
+        margin-top: 10px;
+    }
+
+    .remove-favorite-container button {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 40px;
+    }
+    .cart-items{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }

@@ -1,0 +1,44 @@
+header h1{
+   color: #5c1010;
+}
+
+.case-container , .airpods-case-container {
+    grid-template-columns: repeat(3, 1fr) !important; 
+}
+.search-filter-container {
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#search-input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#filter-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filter-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+    .case-container, .airpods-case-container {
+        grid-template-columns: repeat(2, 1fr) !important; 
+    }
+}
+@media (max-width: 768px) {
+    .case-container, .airpods-case-container {
+        grid-template-columns: repeat(1, 1fr) !important; 
+    }
+}
